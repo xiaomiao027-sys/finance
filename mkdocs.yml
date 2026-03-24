@@ -1,0 +1,130 @@
+# ==================== Site Information ====================
+site_name: Henry · Data Analytics Portfolio
+site_url: https://henry.github.io
+site_author: Henry
+site_description: Data Analyst | Python | SQL | E-commerce Analytics | RFM Customer Segmentation
+
+# Repository information (for GitHub link in header)
+repo_name: henry/henry.github.io
+repo_url: https://github.com/henry/henry.github.io
+
+# ==================== Theme Configuration ====================
+theme:
+  name: material
+  
+  # Language setting
+  language: en
+  
+  # Site favicon (using default)
+  favicon: assets/images/favicon.png
+  
+  # Theme features
+  features:
+    - navigation.tabs           # Top navigation tabs
+    - navigation.sections       # Navigation sections
+    - navigation.top            # Back to top button
+    - navigation.tracking       # Update URL on scroll
+    - search.highlight          # Highlight search results
+    - search.suggest            # Search suggestions
+    - content.code.annotate     # Code annotation support
+    - content.code.copy         # Copy button for code blocks
+    
+  # Color scheme (supports light/dark mode toggle)
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode  
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Font settings
+  font:
+    text: Noto Sans SC  # Chinese-friendly font
+    code: JetBrains Mono # Code font
+
+# ==================== Plugin Configuration ====================
+plugins:
+  - search
+  - mkdocs-jupyter
+  - git-revision-date-localized
+
+# ==================== Markdown Extensions ====================
+markdown_extensions:
+  # Code highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  
+  # Tables
+  - tables
+  
+  # Footnotes
+  - footnotes
+  
+  # Table of contents
+  - toc:
+      permalink: true
+      title: On this page
+      
+  # Admonitions (info/warning boxes)
+  - admonition
+  - pymdownx.details
+  
+  # Emoji support
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
+  # Math formulas (if needed)
+  - pymdownx.arithmatex:
+      generic: true
+      
+  # Task lists (checkboxes)
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      
+  # Definition lists
+  - def_list
+
+# ==================== Navigation Menu ====================
+nav:
+  - Home: index.md
+  - Projects:
+    - RFM Customer Segmentation: projects/rfm_analysis.html
+    - Product Performance Analysis: projects/product_analysis.html
+    - Financial Product Analysis: projects/financial_product_analysis.html
+  - About: about.md
+  - Contact: contact.md
+
+# ==================== Footer Information ====================
+copyright: Copyright &copy; 2026 Henry
+
+# ==================== Social Links ====================
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/henry
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/hon-yue-cheung-3a3a04386/
+    - icon: fontawesome/solid/envelope
+      link: xiaomiao027@outlook.com
+      
+  # Footer settings
+  generator: false  # Hide "Made with MkDocs" text
+  
+# ==================== Custom Resources ====================
+extra_css:
+  - stylesheets/extra.css  # Custom CSS (if needed)
+
+extra_javascript:
+  - javascripts/extra.js   # Custom JavaScript (if needed)
