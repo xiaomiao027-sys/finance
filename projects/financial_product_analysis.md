@@ -36,21 +36,6 @@ The chart shows that the stock market has exhibited the following characteristic
 - **Trading Volume**: High market activity and ample liquidity
 - **Cumulative Return**: Significant long-term investment returns
 
-```python
-import pandas as pd
-import numpy as np
-
-# Simulated stock market data
-market_data = {
-    'CSI 300': {'Annualized Return': 0.12, 'Annualized Volatility': 0.18, 'Sharpe Ratio': 0.67},
-    'ChiNext Index': {'Annualized Return': 0.15, 'Annualized Volatility': 0.25, 'Sharpe Ratio': 0.60},
-    'STAR 50': {'Annualized Return': 0.18, 'Annualized Volatility': 0.28, 'Sharpe Ratio': 0.64}
-}
-
-df_market = pd.DataFrame(market_data).T
-print(df_market)
-```
-
 #### Sector Performance Analysis
 ![Sector Analysis](../images/sector_analysis.png)
 
