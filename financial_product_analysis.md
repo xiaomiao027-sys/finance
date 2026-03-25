@@ -28,7 +28,7 @@ This report conducts an in-depth analysis of mainstream financial products in th
 ### 1. Stock Market Analysis
 
 #### Market Performance Overview
-![Stock Performance Analysis](../images/stock_performance.png)
+![Stock Performance Analysis](images/stock_performance.png)
 
 The chart shows that the stock market has exhibited the following characteristics over the past few years:
 - **Price Trend**: Overall upward trend with high volatility
@@ -37,7 +37,7 @@ The chart shows that the stock market has exhibited the following characteristic
 - **Cumulative Return**: Significant long-term investment returns
 
 #### Sector Performance Analysis
-![Sector Analysis](../images/sector_analysis.png)
+![Sector Analysis](images/sector_analysis.png)
 
 - **Technology Sector**: Annualized return of 15.2%, leading all sectors
 - **Consumer Sector**: Steady growth with 10.8% annualized return
@@ -52,7 +52,7 @@ The chart shows that the stock market has exhibited the following characteristic
 - **Convertible Bonds**: Average conversion premium rate of 15%, with allocation value
 
 #### Bond Fund Performance
-![Fund Comparison Analysis](../images/fund_comparison.png)
+![Fund Comparison Analysis](images/fund_comparison.png)
 
 | Fund Type | Annualized Return | Maximum Drawdown | Sharpe Ratio |
 |-----------|-------------------|------------------|--------------|
@@ -88,7 +88,7 @@ The chart shows that the stock market has exhibited the following characteristic
 ## Investment Recommendations
 
 ### Asset Allocation Recommendations
-![Portfolio Analysis](../images/portfolio_analysis.png)
+![Portfolio Analysis](images/portfolio_analysis.png)
 
 ```python
 # Optimized asset allocation
@@ -105,7 +105,7 @@ expected_volatility = 0.12  # 12% annualized volatility
 sharpe_ratio = expected_return / expected_volatility  # 0.67
 ```
 
-![Financial Analysis Summary](../images/financial_summary.png)
+![Financial Analysis Summary](images/financial_summary.png)
 
 ### Specific Product Recommendations
 
