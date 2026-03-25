@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>金融分析仪表板</title>
+    <title>Financial Analytics Dashboard</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -158,166 +158,196 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 金融分析仪表板</h1>
-            <p>Financial Analytics Dashboard</p>
+            <h1>📊 Financial Analytics Dashboard</h1>
+            <p>Real-time Portfolio Performance & Analysis</p>
         </div>
 
         <div class="nav">
-            <a href="financial_product_analysis.html">📈 金融报告</a>
-            <a href="https://xiaomiao027-sys.github.io/dashboard.html">🛒 电商仪表板</a>
-            <a href="https://xiaomiao027-sys.github.io/main.html">🏠 主页</a>
+            <a href="financial_product_analysis.html">📈 Financial Report</a>
+            <a href="https://xiaomiao027-sys.github.io/dashboard.html">🛒 E-commerce Dashboard</a>
+            <a href="https://xiaomiao027-sys.github.io/main.html">🏠 Home</a>
         </div>
 
         <div class="stats">
             <div class="stat-card">
-                <div class="stat-label">投资组合总值</div>
-                <div class="stat-value" id="portfolio-value">¥2,456,789</div>
+                <div class="stat-label">Portfolio Value</div>
+                <div class="stat-value" id="portfolio-value">$2,456,789</div>
                 <div class="stat-label" style="color: #4CAF50;">+5.23% ↗</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">今日收益率</div>
+                <div class="stat-label">Daily Return</div>
                 <div class="stat-value" id="daily-return">+2.34%</div>
-                <div class="stat-label" style="color: #4CAF50;">+¥12,345</div>
+                <div class="stat-label" style="color: #4CAF50;">+$12,345</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">股票数量</div>
+                <div class="stat-label">Stock Count</div>
                 <div class="stat-value" id="stock-count">156</div>
-                <div class="stat-label" style="color: #4CAF50;">+12 新增</div>
+                <div class="stat-label" style="color: #4CAF50;">+12 Added</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">风险评级</div>
-                <div class="stat-value" id="risk-level">中等</div>
-                <div class="stat-label">稳定</div>
+                <div class="stat-label">Risk Level</div>
+                <div class="stat-value" id="risk-level">Medium</div>
+                <div class="stat-label">Stable</div>
             </div>
         </div>
 
         <div class="charts">
             <div class="chart">
-                <h3>📈 投资组合表现</h3>
-                <div class="bar-chart">
-                    <div class="bar" style="height: 60%;">
-                        <span class="bar-label">1月</span>
-                    </div>
-                    <div class="bar" style="height: 70%;">
-                        <span class="bar-label">2月</span>
-                    </div>
+                <h3>📈 Portfolio Performance</h3>
+                <div class="bar-chart" id="portfolio-performance">
                     <div class="bar" style="height: 65%;">
-                        <span class="bar-label">3月</span>
+                        <span class="bar-label">Jan</span>
                     </div>
-                    <div class="bar" style="height: 80%;">
-                        <span class="bar-label">4月</span>
+                    <div class="bar" style="height: 68%;">
+                        <span class="bar-label">Feb</span>
+                    </div>
+                    <div class="bar" style="height: 62%;">
+                        <span class="bar-label">Mar</span>
+                    </div>
+                    <div class="bar" style="height: 75%;">
+                        <span class="bar-label">Apr</span>
+                    </div>
+                    <div class="bar" style="height: 82%;">
+                        <span class="bar-label">May</span>
+                    </div>
+                    <div class="bar" style="height: 88%;">
+                        <span class="bar-label">Jun</span>
+                    </div>
+                    <div class="bar" style="height: 92%;">
+                        <span class="bar-label">Jul</span>
                     </div>
                     <div class="bar" style="height: 85%;">
-                        <span class="bar-label">5月</span>
+                        <span class="bar-label">Aug</span>
                     </div>
                     <div class="bar" style="height: 90%;">
-                        <span class="bar-label">6月</span>
+                        <span class="bar-label">Sep</span>
+                    </div>
+                    <div class="bar" style="height: 95%;">
+                        <span class="bar-label">Oct</span>
+                    </div>
+                    <div class="bar" style="height: 98%;">
+                        <span class="bar-label">Nov</span>
+                    </div>
+                    <div class="bar" style="height: 100%;">
+                        <span class="bar-label">Dec</span>
                     </div>
                 </div>
             </div>
 
             <div class="chart">
-                <h3>🥧 资产配置分布</h3>
+                <h3>🥧 Asset Allocation</h3>
                 <div class="pie-chart">
                     <div class="pie-center">100%</div>
                 </div>
                 <div class="legend">
                     <div class="legend-item">
                         <div class="legend-color" style="background: #2196F3;"></div>
-                        <span>股票 35%</span>
+                        <span>Stocks 35%</span>
                     </div>
                     <div class="legend-item">
                         <div class="legend-color" style="background: #4CAF50;"></div>
-                        <span>债券 30%</span>
+                        <span>Bonds 30%</span>
                     </div>
                     <div class="legend-item">
                         <div class="legend-color" style="background: #FF9800;"></div>
-                        <span>基金 25%</span>
+                        <span>Funds 25%</span>
                     </div>
                     <div class="legend-item">
                         <div class="legend-color" style="background: #9C27B0;"></div>
-                        <span>其他 10%</span>
+                        <span>Others 10%</span>
                     </div>
                 </div>
             </div>
 
             <div class="chart">
-                <h3>📊 行业分析</h3>
+                <h3>📊 Sector Analysis</h3>
                 <div class="bar-chart">
-                    <div class="bar" style="height: 75%; background: linear-gradient(to top, #4CAF50, #81C784);">
-                        <span class="bar-label">科技</span>
+                    <div class="bar" style="height: 78%; background: linear-gradient(to top, #4CAF50, #81C784);">
+                        <span class="bar-label">Tech</span>
                     </div>
-                    <div class="bar" style="height: 60%; background: linear-gradient(to top, #FF9800, #FFB74D);">
-                        <span class="bar-label">金融</span>
+                    <div class="bar" style="height: 65%; background: linear-gradient(to top, #FF9800, #FFB74D);">
+                        <span class="bar-label">Finance</span>
                     </div>
-                    <div class="bar" style="height: 85%; background: linear-gradient(to top, #4CAF50, #81C784);">
-                        <span class="bar-label">医疗</span>
+                    <div class="bar" style="height: 92%; background: linear-gradient(to top, #4CAF50, #81C784);">
+                        <span class="bar-label">Health</span>
                     </div>
-                    <div class="bar" style="height: 45%; background: linear-gradient(to top, #FF9800, #FFB74D);">
-                        <span class="bar-label">消费</span>
+                    <div class="bar" style="height: 52%; background: linear-gradient(to top, #FF9800, #FFB74D);">
+                        <span class="bar-label">Consumer</span>
                     </div>
-                    <div class="bar" style="height: 70%; background: linear-gradient(to top, #4CAF50, #81C784);">
-                        <span class="bar-label">能源</span>
+                    <div class="bar" style="height: 71%; background: linear-gradient(to top, #4CAF50, #81C784);">
+                        <span class="bar-label">Energy</span>
+                    </div>
+                    <div class="bar" style="height: 58%; background: linear-gradient(to top, #FF9800, #FFB74D);">
+                        <span class="bar-label">Industrial</span>
                     </div>
                 </div>
                 <div class="legend">
                     <div class="legend-item">
                         <div class="legend-color" style="background: #4CAF50;"></div>
-                        <span>收益率</span>
+                        <span>Returns</span>
                     </div>
                     <div class="legend-item">
                         <div class="legend-color" style="background: #FF9800;"></div>
-                        <span>风险</span>
+                        <span>Risk</span>
                     </div>
                 </div>
             </div>
 
             <div class="chart">
-                <h3>🔥 市场趋势</h3>
+                <h3>🔥 Market Trends</h3>
                 <div style="margin-top: 20px;">
                     <div style="margin-bottom: 10px;">
-                        <strong>上证指数:</strong> <span style="color: #2196F3;">3,245.67 (+1.2%)</span>
+                        <strong>S&P 500:</strong> <span style="color: #2196F3;">4,245.67 (+1.2%)</span>
                     </div>
                     <div style="margin-bottom: 10px;">
-                        <strong>深证成指:</strong> <span style="color: #4CAF50;">10,234.56 (+0.8%)</span>
+                        <strong>NASDAQ:</strong> <span style="color: #4CAF50;">13,234.56 (+0.8%)</span>
                     </div>
                     <div>
-                        <strong>创业板指:</strong> <span style="color: #FF9800;">2,123.45 (-0.3%)</span>
+                        <strong>DOW JONES:</strong> <span style="color: #FF9800;">33,123.45 (-0.3%)</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="update-time">
-            最后更新: <span id="update-time"></span> | 数据每5秒自动更新
+            Last Updated: <span id="update-time"></span> | Auto-refresh every 5 seconds
         </div>
     </div>
 
     <script>
         function updateTime() {
             const now = new Date();
-            document.getElementById('update-time').textContent = now.toLocaleString('zh-CN');
+            document.getElementById('update-time').textContent = now.toLocaleString('en-US');
         }
 
         function updateStats() {
-            // 更新投资组合价值
+            // Update portfolio value
             const portfolioValue = document.getElementById('portfolio-value');
-            const currentValue = parseInt(portfolioValue.textContent.replace(/[¥,]/g, ''));
+            const currentValue = parseInt(portfolioValue.textContent.replace(/[$,]/g, ''));
             const newValue = currentValue + Math.floor(Math.random() * 10000) - 5000;
-            portfolioValue.textContent = '¥' + newValue.toLocaleString();
+            portfolioValue.textContent = '$' + newValue.toLocaleString();
 
-            // 更新收益率
+            // Update daily return
             const dailyReturn = document.getElementById('daily-return');
             const returnChange = (Math.random() * 4 - 1).toFixed(2);
             dailyReturn.textContent = (returnChange > 0 ? '+' : '') + returnChange + '%';
 
-            // 更新股票数量
+            // Update stock count
             const stockCount = document.getElementById('stock-count');
             const newStockCount = parseInt(stockCount.textContent) + Math.floor(Math.random() * 5) - 2;
             stockCount.textContent = newStockCount;
+
+            // Update portfolio performance bars with realistic growth pattern
+            const bars = document.querySelectorAll('#portfolio-performance .bar');
+            bars.forEach((bar, index) => {
+                const baseHeight = 60 + (index * 3); // Progressive growth
+                const variation = Math.random() * 10 - 5; // ±5% variation
+                const newHeight = Math.max(20, Math.min(100, baseHeight + variation));
+                bar.style.height = newHeight + '%';
+            });
         }
 
-        // 初始化
+        // Initialize
         updateTime();
         setInterval(updateTime, 60000);
         setInterval(updateStats, 5000);
