@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Product Analysis Report</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #1e3c72;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 10px;
+            margin: 30px 0 20px 0;
+        }
+        
+        h3 {
+            color: #2a5298;
+            margin: 20px 0 10px 0;
+        }
+        
+        .chart-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .chart-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-buttons {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+        }
+        
+        .btn.secondary {
+            background: linear-gradient(45deg, #28a745, #20c997);
+        }
+        
+        .btn.secondary:hover {
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .findings {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .findings ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .findings li {
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .findings li:last-child {
+            border-bottom: none;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #1e3c72;
+            font-weight: 500;
+        }
+        
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        th {
+            background: #1e3c72;
+            color: white;
+            font-weight: 500;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-buttons">
+            <a href="https://xiaomiao027-sys.github.io/" class="btn secondary">🏠 Main Portfolio</a>
+            <a href="https://xiaomiao027-sys.github.io/financial/" class="btn">💰 Financial Focus</a>
+        </div>
+        
+        <div class="header">
+            <h1>Financial Product Analysis Report</h1>
+            <p>Comprehensive analysis of financial products including stocks, bonds, funds, and investment strategies</p>
+        </div>
+        
+        <div class="content">
+            <h2>Project Overview</h2>
+            <p>This report conducts an in-depth analysis of mainstream financial products in the current market, including stocks, bonds, funds, derivatives, and other categories. It evaluates product performance, risk-return characteristics, and investment value using quantitative analysis methods.</p>
+            
+            <h2>Analysis Objectives</h2>
+            <ul>
+                <li>Evaluate risk-return characteristics of different financial products</li>
+                <li>Identify market trends and investment opportunities</li>
+                <li>Provide data-driven decision support for investors</li>
+                <li>Develop optimized asset allocation recommendations</li>
+            </ul>
+            
+            <h2>Key Findings</h2>
+            
+            <h3>1. Stock Market Analysis</h3>
+            <div class="chart-container">
+                <img src="images/stock_performance.png" alt="Stock Performance Analysis">
+            </div>
+            
+            <div class="findings">
+                <ul>
+                    <li><span class="highlight">Price Trend</span>: Overall upward trend with high volatility</li>
+                    <li><span class="highlight">Return Distribution</span>: Approximately normal distribution with slight right skewness</li>
+                    <li><span class="highlight">Trading Volume</span>: High market activity and ample liquidity</li>
+                    <li><span class="highlight">Cumulative Return</span>: Significant long-term investment returns</li>
+                </ul>
+            </div>
+            
+            <h3>Sector Performance Analysis</h3>
+            <div class="chart-container">
+                <img src="images/sector_analysis.png" alt="Sector Analysis">
+            </div>
+            
+            <div class="findings">
+                <ul>
+                    <li><span class="highlight">Technology Sector</span>: Annualized return of 15.2%, leading all sectors</li>
+                    <li><span class="highlight">Consumer Sector</span>: Steady growth with 10.8% annualized return</li>
+                    <li><span class="highlight">Financial Sector</span>: Valuation recovery with 8.5% annualized return</li>
+                    <li><span class="highlight">Healthcare Sector</span>: 12.3% annualized return under policy influence</li>
+                </ul>
+            </div>
+            
+            <h3>2. Bond Market Analysis</h3>
+            <div class="chart-container">
+                <img src="images/fund_comparison.png" alt="Fund Comparison Analysis">
+            </div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fund Type</th>
+                            <th>Annualized Return</th>
+                            <th>Maximum Drawdown</th>
+                            <th>Sharpe Ratio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pure Bond Fund</td>
+                            <td>4.2%</td>
+                            <td>-2.1%</td>
+                            <td>1.8</td>
+                        </tr>
+                        <tr>
+                            <td>Mixed Bond Fund</td>
+                            <td>6.8%</td>
+                            <td>-5.3%</td>
+                            <td>1.2</td>
+                        </tr>
+                        <tr>
+                            <td>Convertible Bond Fund</td>
+                            <td>12.5%</td>
+                            <td>-12.8%</td>
+                            <td>0.9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>3. Portfolio Analysis</h3>
+            <div class="chart-container">
+                <img src="images/portfolio_analysis.png" alt="Portfolio Analysis">
+            </div>
+            
+            <div class="code-block">
+                <pre># Optimized asset allocation
+portfolio_weights = {
+    'Stocks': 0.45,      # 45%
+    'Bonds': 0.35,       # 35%
+    'Cash': 0.10,        # 10%
+    'Alternative Investments': 0.10  # 10%
+}
+
+# Expected portfolio performance
+expected_return = 0.08  # 8% annualized return
+expected_volatility = 0.12  # 12% annualized volatility
+sharpe_ratio = expected_return / expected_volatility  # 0.67</pre>
+            </div>
+            
+            <h3>4. Financial Analysis Summary</h3>
+            <div class="chart-container">
+                <img src="images/financial_summary.png" alt="Financial Analysis Summary">
+            </div>
+            
+            <h2>Investment Recommendations</h2>
+            
+            <h3>Conservative Investors</h3>
+            <ul>
+                <li><strong>Money Market Funds</strong>: High liquidity, very low risk</li>
+                <li><strong>Short-term Wealth Management</strong>: Yield 3.5%–4.0%</li>
+                <li><strong>Government Bonds</strong>: High safety, tax-exempt advantage</li>
+            </ul>
+            
+            <h3>Moderate Investors</h3>
+            <ul>
+                <li><strong>Balanced Funds</strong>: 6:4 stock-bond allocation</li>
+                <li><strong>FOF Products</strong>: Professional management, diversified risk</li>
+                <li><strong>Convertible Bonds</strong>: Balanced upside potential and downside protection</li>
+            </ul>
+            
+            <h3>Aggressive Investors</h3>
+            <ul>
+                <li><strong>Growth Stock Funds</strong>: Focus on technology and new energy sectors</li>
+                <li><strong>Quantitative Hedging</strong>: Target absolute returns</li>
+                <li><strong>Private Equity</strong>: Long-term layout, high return potential</li>
+            </ul>
+            
+            <h2>Technical Implementation</h2>
+            
+            <div class="code-block">
+                <pre>import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+
+# Financial time series prediction model
+def financial_prediction_model(data, target_col, feature_cols):
+    """
+    Financial product return prediction model
+    """
+    # Data preprocessing
+    X = data[feature_cols]
+    y = data[target_col]
+    
+    # Train-test split
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42
+    )
+    
+    # Model training
+    model = RandomForestRegressor(n_estimators=100, random_state=42)
+    model.fit(X_train, y_train)
+    
+    # Prediction
+    predictions = model.predict(X_test)
+    
+    return model, predictions
+
+# Value at Risk calculation
+def calculate_var(returns, confidence_level=0.95):
+    """
+    Calculate Value at Risk (VaR)
+    """
+    return np.percentile(returns, (1 - confidence_level) * 100)</pre>
+            </div>
+            
+            <h2>Conclusion</h2>
+            <p>This comprehensive analysis provides valuable insights for investment decision-making. The key findings suggest that a diversified portfolio approach with proper risk management can achieve optimal risk-adjusted returns. Investors should consider their risk tolerance and investment horizon when implementing these recommendations.</p>
+            
+            <div class="nav-buttons" style="margin-top: 40px;">
+                <a href="https://xiaomiao027-sys.github.io/financial/" class="btn">🔙 Back to Financial Portfolio</a>
+                <a href="https://xiaomiao027-sys.github.io/" class="btn secondary">🏠 Main Portfolio</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
