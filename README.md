@@ -11,7 +11,7 @@ This repository contains financial analysis projects and dashboards.
 
 ### Links
 - **Main Portfolio**: https://xiaomiao027-sys.github.io/
-- **Live Dashboard**: https://xiaomiao027-sys.github.io/dashboard.html](https://xiaomiao027-sys.github.io/finance/
+- **Live Dashboard**: https://xiaomiao027-sys.github.io/finance/financial_product_analysis.html
 
 ### Contact
 - **Email**: xiaomiao027@outlook.com
